@@ -1,0 +1,100 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: brightness(0.5);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 80px;
+}
+
+.slogan {
+  color: #fff;
+  max-width: 21ch;
+  margin: 0 auto;
+  font-size: 4rem;
+  line-height: 1.15;
+  margin-bottom: 0.7rem;
+}
+.slogan-more{
+  color: #fff;
+  max-width: 60ch;
+  margin: 0 auto;
+  font-size: 1rem;
+  margin-bottom: 2.15rem;
+}
+
+.btn-menu {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: #ffffff;
+
+  --bs-btn-hover-color: var(--espresso);
+  --bs-btn-hover-bg: #ffffff;
+  --bs-btn-hover-border-color: #ffffff;
+
+  --bs-btn-active-color: var(--espresso);
+  --bs-btn-active-bg: var(--paper);
+  --bs-btn-active-border-color: var(--paper);
+
+  transition: background-color .3s, color .3s, transform 0.3s, border-color .3s;
+}
+
+.btn-promo-cta{
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: var(--brick);
+  --bs-btn-border-color: var(--brick);
+
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #3d604f;
+  --bs-btn-hover-border-color: #3d604f;
+
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #243a31;
+  --bs-btn-active-border-color: #243a31;
+
+  transition: background-color .3s, color .3s, transform 0.3s, border-color .3s;
+}
+
+.btn-pesan-cta{
+  --bs-btn-color: var(--espresso);
+  --bs-btn-bg: var(--caramel);
+  --bs-btn-border-color: var(--caramel);
+
+  --bs-btn-hover-color: var(--espresso);
+  --bs-btn-hover-bg: #e6b06c;
+  --bs-btn-hover-border-color: #e6b06c;
+
+  --bs-btn-active-color: var(--espresso);
+  --bs-btn-active-bg: #c4853d;
+  --bs-btn-active-border-color: #c4853d;
+
+  transition: background-color .3s, color .3s, transform 0.3s, border-color .3s;
+}
+
+.btn-menu:hover,
+.btn-pesan-cta:hover,
+.btn-promo-cta:hover{
+  transform: translateY(-5px);
+}
+
+.btn-menu:active,
+.btn-pesan-cta:active,
+.btn-promo-cta:active{
+  transform: translateY(0);
+}

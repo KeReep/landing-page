@@ -1,0 +1,58 @@
+.promo-section{
+  background: var(--paper);
+  padding: 95px 0;
+}
+
+.poster-promo {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.promo-title{
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--coffee);
+  margin-bottom: 8px;
+}
+
+.promo-desc {
+  font-size: 1.2rem;
+}
+
+.label-promo {
+  background-color: var(--caramel);
+  color: var(--coffee);
+  padding: 10px 15px;
+  font-size: clamp(0.8rem, 4vw, 1.2rem);
+  margin-bottom: 1.5rem;
+}
+
+.btn-promo{
+  --bs-btn-color: var(--coffee);
+  --bs-btn-bg: var(--caramel);
+  --bs-btn-border-color: var(--caramel);
+
+  --bs-btn-hover-color: var(--coffee);
+  --bs-btn-hover-bg: #e6b06c;
+  --bs-btn-hover-border-color: #e6b06c;
+
+  --bs-btn-active-color: var(--coffee);
+  --bs-btn-active-bg: #c4853d;
+  --bs-btn-active-border-color: #c4853d;
+
+  margin-top: 1.5rem;
+  font-weight: bold;
+  font-size: clamp(0.8rem, 4vw, 1.2rem);
+  transition: background-color .25s, border-color .25s, transform .25s, box-shadow .25s;
+}
+
+.btn-promo:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(217, 154, 78, .35);
+}
+
+.btn-promo:active {
+  transform: translateY(0) scale(.97);
+    box-shadow: 0 2px 6px rgba(217, 154, 78, .3);
+    transition-duration: .08s;
+}

@@ -1,0 +1,64 @@
+#mainNav {
+  --nav-fg: #ffffff;
+  --nav-hover: var(--caramel);
+  padding: 18px 0;
+  background: transparent;
+  transition: background .3s, box-shadow .3s, padding .3s;
+}
+
+#mainNav .navbar-brand {
+  color: var(--nav-fg);
+  font-family: Aclonica, sans-serif;
+  font-size: 1.4rem;
+  transition: color .3s;
+}
+
+#mainNav .nav-link {
+  color: var(--nav-fg);
+  font-size: 0.8rem;
+  letter-spacing: .2rem;
+}
+
+#mainNav .nav-link:hover{
+  color: var(--nav-hover);
+}
+
+.btn-pill {
+  font-size: .85rem;
+  letter-spacing: .2em;
+}
+
+.nav-cta {
+  color: var(--nav-fg);
+  border: 1.5px solid var(--nav-fg);
+  background: transparent;
+  transition: all .3s;
+}
+
+.nav-cta:hover {
+  background-color: var(--nav-fg);
+  border-color: var(--nav-fg);
+  color: var(--espreso);
+}
+
+#mainNav.scrolled {
+  --nav-fg: var(--espreso);
+  --nav-hover: var(--coffee);
+  padding: 8px 0;
+  background: rgba(255, 250, 243, .7);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(43, 29, 22, .08);
+  box-shadow: 0 4px 24px rgba(43, 29, 22, .12);
+}
+
+#mainNav.scrolled .nav-cta {
+  background: #d99a4e;
+  border-color: #d99a4e;
+  color: var(--espreso);
+}
+#mainNav.scrolled .nav-cta:hover {
+  background: var(--coffee);
+  border-color: var(--coffee);
+  color: #ffffff;
+}
+

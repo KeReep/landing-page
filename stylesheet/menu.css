@@ -1,0 +1,83 @@
+.menu-section {
+  background: var(--paper);
+  padding: 5rem 0;
+}
+
+.menu-text {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--coffee);
+  margin-bottom: 0.5rem;
+}
+
+.menu-desc {
+  color: #6f625b;
+  margin-bottom: 2rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 60px;
+}
+
+.menu-card {
+  flex: 1 1 1;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(43, 29, 22, .1);
+}
+
+.menu-card .card-img-top {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.menu-card .card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-card .card-title {
+  font-size: 1.3rem;
+  color: var(--coffee);
+}
+
+.menu-card .card-text {
+  color: #6f625b;
+  font-size: .95rem;
+}
+
+.menu-card .btn {
+  margin-top: auto;
+  align-self: center;
+}
+
+.btn-carousel {
+  --bs-btn-color: #6f625b;
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: #6f625b;
+
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #6f625b;
+  --bs-btn-hover-border-color: #6f625b;
+
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #59504a;
+  --bs-btn-active-border-color: #59504a;
+
+  transition: background-color .3s, color .3s, border-color .3s, transform .3s;
+  box-shadow: 0 6px 14px rgba(43, 29, 22, .18);
+}
+
+.btn-carousel:hover {
+  transform: translateY(-5px);
+}
+
+.btn-carousel:active {
+  transform: translateY(0);
+}

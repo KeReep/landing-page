@@ -1,0 +1,44 @@
+:root {
+  --espresso: #2b1d16;
+  --coffee:   #6b4226;
+  --caramel:  #d99a4e;
+  --brick:    #2f4a3f;
+  --cream:    #f6ecdd;
+  --paper:    #fffaf3;
+  --text:     #2a2320;
+
+  --font-brand: 'Aclonica', cursive, sans-serif;
+  --font-heading: 'Fredoka', cursive, sans-serif;
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+body {
+  background: var(--espresso); 
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6rem;
+  margin: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin-bottom: 0;
+}
+
+p {
+  font-family: var(--font-body);
+  margin-bottom: 0;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  padding: 10px 70px 20px;
+}

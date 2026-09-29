@@ -1,0 +1,70 @@
+.order-section {
+  background: linear-gradient(120deg, #2f4a3f, #1c2d26);
+  min-height: 100vh;
+  color: var(--paper);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-title {
+  margin-bottom: 0.5rem;
+}
+
+.order-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 24px;
+  padding: 2rem 1rem 0;
+}
+
+.order-card {
+  flex: 1 1 260px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+}
+
+.order-card .card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+}
+
+.order-card .btn {
+  margin-top: auto;
+}
+
+.icon-order,
+.order-card .card-img-top {
+  height: 4.5rem;
+  width: auto;
+  margin: 1.25rem 0;
+}
+
+.btn-order {
+  --bs-btn-color: #000000;
+  --bs-btn-bg: #ffffff;
+  --bs-btn-border-color: #ffffff;
+
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #6f625b;
+  --bs-btn-hover-border-color: #6f625b;
+
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #59504a;
+  --bs-btn-active-border-color: #59504a;
+
+  font-weight: bold;
+}

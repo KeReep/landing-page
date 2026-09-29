@@ -1,0 +1,20 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Folder kerja lokal (kalau ada)
+node_modules/
+dist/
+.cache/
+
+# File sementara
+*.log
+*.tmp
+*.bak
